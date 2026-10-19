@@ -1,0 +1,124 @@
+{
+  "dataset": {
+    "name": "Iris（鸢尾花）",
+    "n_samples": 150,
+    "n_features": 4,
+    "feature_names": [
+      "萼片长度 (cm)",
+      "萼片宽度 (cm)",
+      "花瓣长度 (cm)",
+      "花瓣宽度 (cm)"
+    ],
+    "classes": [
+      "山鸢尾",
+      "变色鸢尾",
+      "维吉尼亚鸢尾"
+    ],
+    "class_counts": {
+      "山鸢尾": 50,
+      "变色鸢尾": 50,
+      "维吉尼亚鸢尾": 50
+    }
+  },
+  "split": {
+    "n_train": 105,
+    "n_test": 45,
+    "test_size": 0.3,
+    "random_state": 42,
+    "cv_folds": 5
+  },
+  "best_k": 8,
+  "cv_accuracy": 0.9714285714285713,
+  "test_accuracy": 0.9111111111111111,
+  "classification_report": {
+    "山鸢尾": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "变色鸢尾": {
+      "precision": 0.7894736842105263,
+      "recall": 1.0,
+      "f1-score": 0.8823529411764706,
+      "support": 15.0
+    },
+    "维吉尼亚鸢尾": {
+      "precision": 1.0,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.8461538461538461,
+      "support": 15.0
+    },
+    "accuracy": 0.9111111111111111,
+    "macro avg": {
+      "precision": 0.9298245614035089,
+      "recall": 0.9111111111111111,
+      "f1-score": 0.9095022624434389,
+      "support": 45.0
+    },
+    "weighted avg": {
+      "precision": 0.9298245614035088,
+      "recall": 0.9111111111111111,
+      "f1-score": 0.9095022624434389,
+      "support": 45.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      4,
+      11
+    ]
+  ],
+  "scaling_effect": {
+    "raw_cv_accuracy": 0.9714285714285713,
+    "scaled_cv_accuracy": 0.9714285714285713
+  },
+  "neighbor_demo": {
+    "query_index": 30,
+    "true_label": "维吉尼亚鸢尾",
+    "pred_label": "变色鸢尾",
+    "votes": {
+      "山鸢尾": 0,
+      "变色鸢尾": 5,
+      "维吉尼亚鸢尾": 3
+    },
+    "distances": [
+      0.2819,
+      0.3618,
+      0.3822,
+      0.4149,
+      0.4149,
+      0.4506,
+      0.5069,
+      0.5169
+    ]
+  },
+  "wine_supplement": {
+    "k": 5,
+    "n_samples": 178,
+    "n_features": 13,
+    "raw_cv_accuracy": 0.7176666666666668,
+    "scaled_cv_accuracy": 0.968,
+    "raw_test_accuracy": 0.7222222222222222,
+    "scaled_test_accuracy": 0.9444444444444444,
+    "largest_feature_range": {
+      "name": "proline",
+      "range": 1402.0
+    },
+    "smallest_feature_range": {
+      "name": "nonflavanoid_phenols",
+      "range": 0.53
+    }
+  }
+}
